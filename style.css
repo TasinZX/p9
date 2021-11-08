@@ -1,0 +1,75 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+form {
+  background-color: whitesmoke;
+  padding: 3rem 2rem;
+  border-radius: 0.6rem;
+  width: 30%;
+}
+
+form label {
+  display: inline-block;
+  padding: 0.3rem 0;
+  width: 100%;
+}
+
+form input {
+  padding: 0.5rem 0;
+  width: 100%;
+  display: block;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.8rem;
+}
+
+.submit > input {
+  padding: 0.5rem 1.4rem;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: whitesmoke;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  width: 100%;
+}
+
+input::placeholder {
+  color: rgba(92, 92, 92, 0.445);
+  padding-left: 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+.all > small {
+  color: red;
+  visibility: hidden;
+}
+
+.all.success input {
+  border: 1px solid green;
+}
+
+.all.error input {
+  border: 2px solid red;
+}
