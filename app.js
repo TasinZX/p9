@@ -6,6 +6,11 @@ const container = document.querySelector("form");
 
 const btn = document.querySelector(".btn");
 
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+  Validation();
+});
+
 function Validation() {
   // username
   if (userName.value.trim() === "") {
@@ -46,11 +51,6 @@ function Validation() {
     }
   }
 }
-
-btn.addEventListener("click", (e) => {
-  e.preventDefault();
-  Validation();
-});
 
 function emailValidation(testEmail) {
   const re =
